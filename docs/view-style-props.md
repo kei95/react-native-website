@@ -3,7 +3,7 @@ id: view-style-props
 title: View Style Props
 ---
 
-### Example
+### 例
 
 ```SnackPlayer name=ViewStyleProps
 import React from "react";
@@ -51,13 +51,13 @@ const styles = StyleSheet.create({
 export default ViewStyleProps;
 ```
 
-# Reference
+# リファレンス
 
 ## Props
 
 ### `backfaceVisibility`
 
-| Type                          |
+| 型                            |
 | ----------------------------- |
 | enum(`'visible'`, `'hidden'`) |
 
@@ -65,7 +65,7 @@ export default ViewStyleProps;
 
 ### `backgroundColor`
 
-| Type               |
+| 型                 |
 | ------------------ |
 | [color](colors.md) |
 
@@ -73,7 +73,7 @@ export default ViewStyleProps;
 
 ### `borderBottomColor`
 
-| Type               |
+| 型                 |
 | ------------------ |
 | [color](colors.md) |
 
@@ -81,7 +81,7 @@ export default ViewStyleProps;
 
 ### `borderBottomEndRadius`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -89,7 +89,7 @@ export default ViewStyleProps;
 
 ### `borderBottomLeftRadius`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -97,7 +97,7 @@ export default ViewStyleProps;
 
 ### `borderBottomRightRadius`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -105,7 +105,7 @@ export default ViewStyleProps;
 
 ### `borderBottomStartRadius`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -113,7 +113,7 @@ export default ViewStyleProps;
 
 ### `borderBottomWidth`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -121,7 +121,7 @@ export default ViewStyleProps;
 
 ### `borderColor`
 
-| Type               |
+| 型                 |
 | ------------------ |
 | [color](colors.md) |
 
@@ -129,7 +129,7 @@ export default ViewStyleProps;
 
 ### `borderEndColor`
 
-| Type               |
+| 型                 |
 | ------------------ |
 | [color](colors.md) |
 
@@ -137,7 +137,7 @@ export default ViewStyleProps;
 
 ### `borderLeftColor`
 
-| Type               |
+| 型                 |
 | ------------------ |
 | [color](colors.md) |
 
@@ -145,17 +145,16 @@ export default ViewStyleProps;
 
 ### `borderLeftWidth`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
 ---
 
 ### `borderRadius`
+Border の見た目が変わらない場合 `overflow: 'hidden'` を一緒に使ってみてください。
 
-If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
-
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -163,7 +162,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderRightColor`
 
-| Type               |
+| 型                 |
 | ------------------ |
 | [color](colors.md) |
 
@@ -171,7 +170,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderRightWidth`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -179,7 +178,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderStartColor`
 
-| Type               |
+| 型                 |
 | ------------------ |
 | [color](colors.md) |
 
@@ -187,7 +186,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderStyle`
 
-| Type                                    |
+| 型                                      |
 | --------------------------------------- |
 | enum(`'solid'`, `'dotted'`, `'dashed'`) |
 
@@ -195,7 +194,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderTopColor`
 
-| Type               |
+| 型                 |
 | ------------------ |
 | [color](colors.md) |
 
@@ -203,7 +202,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderTopEndRadius`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -211,7 +210,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderTopLeftRadius`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -219,7 +218,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderTopRightRadius`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -227,7 +226,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderTopStartRadius`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -235,7 +234,7 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderTopWidth`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -243,17 +242,16 @@ If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
 
 ### `borderWidth`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
 
 ---
 
 ### `elevation` <div class="label android">Android</div>
+View の高さを Android の[elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation)を通して指定できます。 Android 5.0+のみのサポートなので、それ以前のバージョンでは変化が出ません。
 
-Sets the elevation of a view, using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation). This adds a drop shadow to the item and affects z-order for overlapping views. Only supported on Android 5.0+, has no effect on earlier versions.
-
-| Type   |
+| 型     |
 | ------ |
 | number |
 
@@ -261,6 +259,6 @@ Sets the elevation of a view, using Android's underlying [elevation API](https:/
 
 ### `opacity`
 
-| Type   |
+| 型     |
 | ------ |
 | number |
