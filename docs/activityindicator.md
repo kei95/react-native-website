@@ -5,14 +5,14 @@ title: ActivityIndicator
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import constants from '@site/core/TabsConstants';
 
-Displays a circular loading indicator.
+円形のローディングインディケーターを表示します。
 
-## Example
+## 例
 
 <Tabs groupId="syntax" defaultValue={constants.defaultSyntax} values={constants.syntax}>
 <TabItem value="functional">
 
-```SnackPlayer name=ActivityIndicator%20Function%20Component%20Example
+```SnackPlayer name=ActivityIndicator%20ファンクションコンポーネント例
 import React from "react";
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
@@ -43,7 +43,7 @@ export default App;
 </TabItem>
 <TabItem value="classical">
 
-```SnackPlayer name=ActivityIndicator%20Class%20Component%20Example
+```SnackPlayer name=ActivityIndicator%20クラスコンポーネント例
 import React, { Component } from "react";
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
@@ -78,21 +78,19 @@ export default App;
 </TabItem>
 </Tabs>
 
-# Reference
+# リファレンス
 
 ## Props
 
 ### [View Props](view#props)
-
-Inherits [View Props](view#props).
+[View Props](view#props)を継承しています。
 
 ---
 
 ### `animating`
+インディケーターの表示の有無を(`true`)または(`false`)で設定できます。
 
-Whether to show the indicator (`true`) or hide it (`false`).
-
-| Type | Default |
+| 型   | Default |
 | ---- | ------- |
 | bool | `true`  |
 
@@ -100,19 +98,18 @@ Whether to show the indicator (`true`) or hide it (`false`).
 
 ### `color`
 
-The foreground color of the spinner.
+インディケーターの表面の色を指定することが出来ます。
 
-| Type            | Default                                                                                                                                                                                     |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [color](colors) | `null` (system accent default color)<div class="label android">Android</div><hr/><ins style={{background: '#999'}} className="color-box" />`'#999999'` <div className="label ios">iOS</div> |
+| 型              | Default                                                                                                                                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [color](colors) | `null` (システムアクセントのデフォルトカラー)<div class="label android">Android</div><hr/><ins style={{background: '#999'}} className="color-box" />`'#999999'` <div className="label ios">iOS</div> |
 
 ---
 
 ### `hidesWhenStopped` <div class="label ios">iOS</div>
 
-Whether the indicator should hide when not animating.
-
-| Type | Default |
+アニメーションが止まってる間、インディケーターの表示を隠すかを設定できます。
+| 型   | Default |
 | ---- | ------- |
 | bool | `true`  |
 
@@ -120,8 +117,8 @@ Whether the indicator should hide when not animating.
 
 ### `size`
 
-Size of the indicator.
+インディケーターのサイズです。
 
-| Type                                                                           | Default   |
+| 型                                                                             | Default   |
 | ------------------------------------------------------------------------------ | --------- |
 | enum(`'small'`, `'large'`)<hr/>number <div class="label android">Android</div> | `'small'` |
