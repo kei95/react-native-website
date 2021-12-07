@@ -250,7 +250,7 @@ Border の見た目が変わらない場合 `overflow: 'hidden'` を一緒に使
 
 ### `elevation` <div class="label android">Android</div>
 
-View の高さを Android の[elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation)を通して指定できます。これによってドロップシャドウをアイテムに持たたせられるうえ、その効果はオーバーラッピングする View にも z オーダーで現れます。 Android 5.0+のみのサポートなので、それ以前のバージョンでは変化が出ません。
+View の高さを Android の[elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation)を通して指定できます。これによってドロップシャドウをアイテムに持たせられるうえ、その効果はオーバーラッピングする View の z オーダーに影響をあたえます。 Android 5.0+のみのサポートで、それ以前のバージョンは対応していません。
 
 | 型     |
 | ------ |
